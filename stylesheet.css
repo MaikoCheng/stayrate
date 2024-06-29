@@ -1,0 +1,271 @@
+body{
+    font-family: 'Lato';
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: rgb(199, 33, 37);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.white{
+    color: #FFF;
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: local('Gilroy-Bold'), url(content/Font/Gilroy-Bold.ttf) format('truetype');
+}
+  
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: local('Gilroy-Black'), url(content/Font/Gilroy-Black.ttf) format('truetype');
+}
+  
+
+
+.topWhiteMenu{
+    height: 90px;
+    padding: 0rem 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topWhiteChild{
+    height: 100%;
+    width: 400px !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}.topWhiteChild2{
+    height: 100%;
+    width: 10px !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#tuLogo {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    margin: 0 auto;
+    
+}
+
+.topRedMenu{
+    background-color: rgb(199, 33, 37);
+    height: 70px;
+    width: 90%;
+    align-self: center;
+}
+
+.menuWrapper{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.banner{
+    height:450px;
+    background-image: url(content/BvOF-2018_1213_BBT-gebouw-Atlas-HR-1500x1000-1.jpg);
+    background-position-y:20%;
+    width: 90%;
+}
+.bannerContainer{
+    position: relative; /* Make position relative */
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 160px;
+}
+.bannerContainer::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(199, 33, 37);
+    mix-blend-mode: multiply;
+}
+.innerBanner{
+    position: absolute;
+    z-index: 2;
+}
+
+.title{
+    font-size:50px;
+    font-family: "Gilroy-Black", sans-serif;
+}
+
+.spacer{
+    height: 180px;
+}
+.spacer-small{
+    height: 60px;
+}
+
+.highlightWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionHighlight{
+    background-color: rgb(199, 33, 37);
+    width: 1370px;
+    height: 300px;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.highlight{
+    padding-top: 10px;
+    font-family: "Gilroy-Black", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform:uppercase;
+    max-width: 80%;
+}
+
+.textH3{
+    font-family: "Gilroy-Black", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width:50%;
+}
+
+.sectionP{
+    color: rgb(111, 111, 111);
+    line-height: 25.6px;
+    width:47%;
+    margin-top: 0px;
+    margin: 0;
+}
+
+.sectionTextWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sectionText{
+    height: 600px;
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer{
+    background-color: black;
+    width: 90%;
+    height: 380px;
+    padding: 60px 0px;
+}
+
+.footerTop{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height:70%;
+}
+
+.footTitle{
+    font-size: 16px;
+    margin: 0;
+}
+
+.footerTopSub{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerTopSub2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.socialBut{
+    position: relative;
+    display: block;
+    float: left;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid white;
+    margin: 0 1rem 1rem 0;
+    color: #fff;
+}
+
+.socialLogo{
+    object-fit: contain;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.socialButWrap{
+    margin-top: 20px;
+}
+
+.liner{
+    margin-top: 40px;
+    background-color: rgb(111, 111, 111);
+    height:1px;
+    width: 87%;
+}
+
+.footerBottom{
+    height:30%;
+    display: flex;
+    justify-content: right;
+    padding-right: 6%;
+}
+
+
+
+
+@media  (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .topWhiteMenu {
+        height: 70px;
+        padding: 0rem 20px;
+    }
+    
+    .topWhiteChild {
+        width: 300px;
+    }
+    
+    #tuLogo {
+        max-width: 50%;
+        max-height: 50%;
+    }
+    
+    .topRedMenu {
+        display: none;
+    }
+}
+    
